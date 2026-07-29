@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Proyectos | Karen Barroso Desarrollo Web</title>
 
     <!-- Google Fonts -->
@@ -10,53 +12,155 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="../styles/styles.css">
-    
+
 </head>
+
 <body class="grid-layout">
 
     <header>
 
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-            <img src="../img/logo.png" alt="Logo de Karen Barroso Desarrollo Web">
+            <div class="container">
 
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre mí</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.png" alt="Logo de Karen Barroso Desarrollo Web" height="60">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+                    aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarPrincipal">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
 
         </nav>
 
     </header>
 
-
     <main>
 
-         <section class="proyectos">
+        <section class="proyectos">
 
             <h1>Proyectos</h1>
-            
+
             <div class="contenedor-proyecto">
 
-            <article>
-                <p>En esta sección comparto algunos de los proyectos que estoy realizando.</p>
-                <p>Cada proyecto representa una oportunidad para aprender, crear y aplicar nuevos conocimientos.</p>
-                <p>En ellos pongo en práctica HTML, CSS y las herramientas que voy incorporando durante mi formación como desarrolladora web.</p>
-            </article>
+                <article>
+                    <p>En esta sección comparto algunos de los proyectos que estoy realizando.</p>
+                    <p>Cada proyecto representa una oportunidad para aprender, crear y aplicar nuevos conocimientos.</p>
+                    <p>En ellos pongo en práctica HTML, CSS y las herramientas que voy incorporando durante mi formación
+                        como desarrolladora web.</p>
+                </article>
 
-            <figure>
-                <img src="../img/proyectos.jpg" alt="Proyectos web realizados por Karen Barroso">
-                <figcaption>Algunos de mis proyectos y trabajos.</figcaption>
-            </figure>
+                <figure>
+                    <img src="../img/proyectos.jpg" alt="Proyectos web realizados por Karen Barroso">
+                    <figcaption>Algunos de mis proyectos y trabajos.</figcaption>
+                </figure>
 
             </div>
+            <!-- COMPONENTE BOOTSTRAP CARDS -->
 
-         </section>
+            <div class="container mt-5">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+                            <img src="../img/proyectos.jpg" class="card-img-top" alt="Proyecto web">
+
+                            <div class="card-body">
+                                <h2 class="card-title">Proyecto Web</h2>
+                                <p class="card-text">
+                                    Sitio desarrollado aplicando HTML y CSS.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+                            <img src="../img/servicios.jpg" class="card-img-top" alt="Servicios web">
+
+                            <div class="card-body">
+                                <h2 class="card-title">Servicios</h2>
+                                <p class="card-text">
+                                    Diseño de páginas web adaptadas a diferentes necesidades.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="card">
+                            <img src="../img/imagen-principal.jpg" class="card-img-top" alt="Desarrollo web">
+
+                            <div class="card-body">
+                                <h2 class="card-title">Mi Portfolio</h2>
+                                <p class="card-text">
+                                    Evolución de mi aprendizaje como desarrolladora.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
 
@@ -68,6 +172,7 @@
         <p>Instagram | Facebook | WhatsApp</p>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
