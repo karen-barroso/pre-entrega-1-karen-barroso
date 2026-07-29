@@ -1,12 +1,11 @@
-/* ==========================
-   ESTILOS GENERALES
-========================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* ==========================
+   ESTILOS GENERALES
+========================== */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -24,35 +23,26 @@ header {
     padding: 20px;
 }
 
-header img {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-}
-
 
 /* ==========================
    MENÚ DE NAVEGACIÓN
 ========================== */
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
 nav ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
     gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #60A5FA;
-}
 
 
 /* ==========================
@@ -88,6 +78,46 @@ p {
     margin-bottom: 15px;
 }
 
+/* ==========================
+   LAYOUT INICIO Y PROYECTOS
+========================== */
+
+.contenedor-proyecto {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor-proyecto article {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contenedor-proyecto figure {
+    flex: 1;
+}
+
+.contenedor-proyecto article {
+    flex: 2;
+}
+
+.contenedor-inicio {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor-inicio article {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
 
 /* ==========================
    IMÁGENES
@@ -99,6 +129,12 @@ img {
     display: block;
     margin: 20px auto;
     border-radius: 12px;
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+    margin: 0;
 }
 
 
