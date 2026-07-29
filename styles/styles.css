@@ -12,6 +12,26 @@ body {
     background-color: #F3F4F6;
     color: #374151;
 }
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
 
 
 /* ==========================
@@ -30,20 +50,32 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
     padding: 20px 10px;
 }
 
 nav ul {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+/* ENLACES DEL MENÚ */
 
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 /* ==========================
    CONTENIDO PRINCIPAL
@@ -60,7 +92,7 @@ section {
 h1 {
     text-align: center;
     color: #2563EB;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -83,42 +115,46 @@ p {
 ========================== */
 
 .contenedor-proyecto {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas:
+        "texto"
+        "imagen";
     gap: 30px;
     align-items: center;
-    justify-content: center;
     padding: 20px;
 }
 
 .contenedor-proyecto article {
+    grid-area: texto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
 }
 
 .contenedor-proyecto figure {
-    flex: 1;
-}
-
-.contenedor-proyecto article {
-    flex: 2;
+    grid-area: imagen;
 }
 
 .contenedor-inicio {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas:
+        "texto"
+        "imagen";
     gap: 30px;
     align-items: center;
     padding: 20px;
 }
 
 .contenedor-inicio article {
+    grid-area: texto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
 }
 
+.contenedor-inicio figure {
+    grid-area: imagen;
+}
 /* ==========================
    IMÁGENES
 ========================== */
@@ -126,6 +162,7 @@ p {
 img {
     width: 100%;
     max-width: 500px;
+    height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 12px;
@@ -161,4 +198,32 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+@media (min-width: 1024px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .contenedor-inicio {
+        grid-template-areas: "texto imagen";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedor-proyecto {
+        grid-template-areas: "texto imagen";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
 }
