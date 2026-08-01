@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+
+h1 {
+    text-align: center;
+    color: $color-primario;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: $color-primario;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: $color-texto-suave;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+}

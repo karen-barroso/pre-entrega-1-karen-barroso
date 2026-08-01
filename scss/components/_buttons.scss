@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+
+.btn-primary {
+    background-color: $color-primario;
+    border-color: $color-primario;
+
+    &:hover {
+        background-color: darken($color-primario, 10%);
+        border-color: darken($color-primario, 10%);
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-primario;
+    border-radius: 50%;
+    padding: 20px;
+}

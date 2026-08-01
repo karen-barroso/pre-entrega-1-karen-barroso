@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+
+.navbar {
+    background-color: $color-primario;
+    padding: $espaciado-general;
+
+    .navbar-nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        color: $color-blanco !important;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-brand {
+
+        img {
+            width: 120px;
+            height: auto;
+            margin: 0;
+        }
+    }
+}

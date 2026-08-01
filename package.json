@@ -1,0 +1,24 @@
+{
+  "name": "mi-sitio-web",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en el desarrollo de un portafolio web personal creado para presentar mi perfil profesional, mis servicios y proyectos relacionados con el desarrollo web. Fue realizado como parte de la pre-entrega del curso de Desarrollo Web de Coderhouse utilizando HTML5, CSS3 y Bootstrap 5, aplicando diseño responsive para una correcta visualización en diferentes dispositivos.",
+  "main": "index.js",
+  "scripts": {"sass": "sass scss/main.scss styles/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karen-barroso/pre-entrega-1-karen-barroso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/karen-barroso/pre-entrega-1-karen-barroso/issues"
+  },
+  "homepage": "https://github.com/karen-barroso/pre-entrega-1-karen-barroso#readme",
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}

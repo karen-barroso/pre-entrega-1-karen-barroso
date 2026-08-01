@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: $radio-imagen;
+}
+
+main {
+    padding: $espaciado-general;
+}
+
+@media (min-width: 992px) {
+    main {
+        padding: 40px;
+    }
+}
