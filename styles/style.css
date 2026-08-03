@@ -118,6 +118,12 @@ footer {
 }
 
 .btn-primary {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary {
   background-color: #2563EB;
   border-color: #2563EB;
 }
