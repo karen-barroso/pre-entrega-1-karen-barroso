@@ -18,7 +18,8 @@
 
 
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -80,20 +81,20 @@
 
     <main>
 
-        <section class="container my-5">
+        <section class="container my-5" data-aos="fade-up">
 
-            <h1>Contacto</h1>
-            <p>Si querés comunicarte conmigo, podés hacerlo a través de los siguientes medios.</p>
+            <h1 data-aos="fade-down">Contacto</h1>
+            <p data-aos="fade-right">Si querés comunicarte conmigo, podés hacerlo a través de los siguientes medios.</p>
 
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up">
 
                     <p>Email: contacto@ejemplo.com</p>
                     <p>También podés encontrarme en mis redes sociales.</p>
 
                 </div>
 
-                <figure class="col-lg-6 text-center">
+                <figure class="col-lg-6 text-center" data-aos="fade-left">
                     <img src="../img/contacto.jpg" class="img-fluid" alt="Información de contacto de Karen Barroso">
                     <figcaption>Datos para comunicarse conmigo.</figcaption>
                 </figure>
@@ -115,6 +116,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 

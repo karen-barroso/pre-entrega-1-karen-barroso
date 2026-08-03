@@ -1,6 +1,14 @@
 @use "../utilities/variables" as *;
 
+%boton-base {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
 .btn-primary {
+    @extend %boton-base;
+    
     background-color: $color-primario;
     border-color: $color-primario;
 
