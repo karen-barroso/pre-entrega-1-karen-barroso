@@ -222,5 +222,48 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animacion-aparecer {
+  animation: aparecer 1s ease-in-out;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btn-animado {
+  animation: pulsar 2s infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.imagen-flotante {
+  animation: flotar 3s ease-in-out infinite;
+}
 
 /*# sourceMappingURL=style.css.map */
