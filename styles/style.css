@@ -110,11 +110,16 @@ footer {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #374151;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  gap: 10px;
 }
 
 .btn-primary {
@@ -157,10 +162,6 @@ footer {
 }
 
 .card-img-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 220px;
   width: 100%;
   object-fit: contain;

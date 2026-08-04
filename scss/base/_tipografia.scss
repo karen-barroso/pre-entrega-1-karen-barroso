@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 h1 {
     text-align: center;
@@ -29,7 +30,7 @@ figcaption {
     font-style: italic;
 }
 
-@media (min-width: 992px) {
+@include desktop {
     h1 {
         font-size: 48px;
     }

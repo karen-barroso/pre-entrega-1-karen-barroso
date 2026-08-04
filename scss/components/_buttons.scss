@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../utilities/variables" as *;
 
 %boton-base {
@@ -8,15 +9,15 @@
 
 .btn-primary {
     @extend %boton-base;
-    
+
     background-color: $color-primario;
     border-color: $color-primario;
 
     transition: background-color 0.3s ease, border-color 0.3s ease;
 
     &:hover {
-        background-color: darken($color-primario, 10%);
-        border-color: darken($color-primario, 10%);
+        background-color: color.adjust($color-primario, $lightness: -10%);
+        border-color: color.adjust($color-primario, $lightness: -10%);
     }
 }
 
