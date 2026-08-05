@@ -28,3 +28,6 @@ https://karen-barroso.github.io/pre-entrega-1-karen-barroso/
 **Vercel:**
 
 https://pre-entrega-1-karen-barroso-hs2vtnctf-karen-d982.vercel.app/
+
+
+Última actualización: Deploy configurado en Vercel.
