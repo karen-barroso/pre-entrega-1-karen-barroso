@@ -26,3 +26,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px;
+
+        .navbar-brand img {
+            width: 90px;
+        }
+
+        .navbar-nav {
+            text-align: center;
+            gap: 5px;
+        }
+    }
+}

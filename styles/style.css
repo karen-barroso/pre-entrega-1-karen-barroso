@@ -105,8 +105,10 @@ footer {
 }
 .navbar .navbar-brand img {
   width: 120px;
+  max-width: none;
   height: auto;
   margin: 0;
+  border-radius: 0;
 }
 
 footer {
