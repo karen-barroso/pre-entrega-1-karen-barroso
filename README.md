@@ -34,7 +34,7 @@ https://github.com/karen-barroso/pre-entrega-1-karen-barroso
 ## Sitio publicado
 
 Vercel:
-https://pre-entrega-1-karen-barroso-hs2vtnctf-karen-d982.vercel.app/
+https://pre-entrega-1-karen-barroso.vercel.app/
 
 GitHub Pages:
 https://karen-barroso.github.io/pre-entrega-1-karen-barroso/
