@@ -13,6 +13,11 @@ body {
     color: $color-texto;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 section {
     margin-bottom: 40px;
 }
