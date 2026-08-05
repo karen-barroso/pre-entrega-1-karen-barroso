@@ -114,12 +114,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   background-color: #374151;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  gap: 10px;
 }
 
 .btn-primary {
@@ -220,6 +220,11 @@ footer {
   .contenedor-proyecto {
     grid-template-areas: "texto imagen";
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
   }
 }
 @keyframes aparecer {

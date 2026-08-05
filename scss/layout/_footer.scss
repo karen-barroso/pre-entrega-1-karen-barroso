@@ -2,12 +2,11 @@
 @use "../utilities/mixins" as *;
 
 footer {
-    @include flex-center(column);
+    @include flex-center(column, 10px);
 
     background-color: $color-secundario;
     color: $color-blanco;
     text-align: center;
     padding: $espaciado-general;
     margin-top: 40px;
-    gap: 10px;
 }
